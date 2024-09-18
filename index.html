@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pawan Kumar Rana | Web Developer</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+  <!-- Header Section -->
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#about">About Me</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#hobbies">Hobbies</a></li>
+        <li><a href="#blog">Blog</a></li>
+        <li><a href="#testimonials">Testimonials</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li>
+          <label class="switch">
+            <input type="checkbox" id="theme-toggle">
+            <span class="slider"></span>
+          </label>
+        </li>
+      </ul>
+    </nav>
+    <div class="hero">
+      <h1>Pawan Kumar Rana</h1>
+      <p>Web Developer | BCA Graduate | Passionate Traveler</p>
+    </div>
+  </header>
+
+  <!-- About Me Section -->
+  <section id="about" class="fade-in">
+    <h2>About Me</h2>
+    <div class="about-content">
+      <div class="about-text">
+        <p>Hello! I'm Pawan, a passionate Web Developer from Hazaribagh. I have completed my graduation in BCA from St. Columba's College. I enjoy creating beautiful, functional websites and love working with modern technologies. Besides coding, I'm an avid traveler and sports enthusiast.Outside of my professional life, I am an avid cricket enthusiast, enjoying the sport both as a player and a fan. Riding bikes and traveling are two other passions of mine that keep me energized and inspired. These hobbies allow me to explore new places, meet new people, and gain fresh perspectives that often influence my creative work.</p>
+      </div>
+      <img src="profile.jpeg" alt="Pawan Kumar Rana">
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills">
+    <h2>Skills</h2>
+    <div class="skills-container">
+      <div class="skill">
+        <h3>HTML</h3>
+        <div class="progress-bar"><div style="width: 90%;"></div></div>
+      </div>
+      <div class="skill">
+        <h3>CSS</h3>
+        <div class="progress-bar"><div style="width: 85%;"></div></div>
+      </div>
+      <div class="skill">
+        <h3>JavaScript</h3>
+        <div class="progress-bar"><div style="width: 70%;"></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section with Filters -->
+  <section id="projects">
+    <h2>Projects</h2>
+    <div id="filter-buttons">
+      <button onclick="filterProjects('all')">All</button>
+      <button onclick="filterProjects('web')">Web Development</button>
+      <button onclick="filterProjects('design')">Design</button>
+    </div>
+    <div class="projects-container">
+      <div class="project" data-category="web">
+        <h3>Project One</h3>
+        <p>A responsive website for a client using HTML, CSS, and JavaScript.</p>
+      </div>
+      <div class="project" data-category="design">
+        <h3>Project Two</h3>
+        <p>An interactive web application with real-time data using React and Node.js.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Hobbies Section -->
+  <section id="hobbies">
+    <h2>Hobbies</h2>
+    <div class="hobbies-container">
+      <div class="hobby">
+        <img src="cricket.jpg" alt="Cricket">
+        <h3>Playing Cricket</h3>
+      </div>
+      <div class="hobby">
+        <img src="bike_riding.jpg" alt="Biking">
+        <h3>Riding Bikes</h3>
+      </div>
+      <div class="hobby">
+        <img src="travelling.jpg" alt="Traveling">
+        <h3>Traveling</h3>
+      </div>
+      <div class="hobby">
+        <img src="gaming.jpg" alt="Gaming">
+        <h3>Gaming</h3>
+      </div>
+      <div class="hobby">
+        <img src="photography.jpg" alt="Photography">
+        <h3>Photography</h3>
+      </div>
+    </div>
+  </section>
+
+  <!-- Blog Section -->
+  <!-- <section id="blog">
+    <h2>Latest Blog Posts</h2>
+    <article>
+      <h3>Understanding Flexbox in CSS</h3>
+      <p>A comprehensive guide on how to use Flexbox for modern web layouts...</p>
+      <a href="#">Read More</a>
+    </article>
+  </section> -->
+
+  <!-- Testimonials Section -->
+  <section id="testimonials">
+    <h2>What Clients Say</h2>
+    <div class="testimonial">
+      <p>"I had the opportunity to work with Pawan Kumar Rana on a web development project, and I am incredibly pleased with the outcome. Pawan's dedication, creativity, and technical expertise made the entire process smooth and enjoyable. He took the time to understand my vision and translated it into a stunning, highly functional website that exceeded my expectations.
+
+        His commitment to delivering high-quality work, attention to detail, and prompt communication were remarkable. If you're seeking a skilled web developer who will give his absolute best to ensure your project's success, I highly recommend Pawan."</p>
+      <h4>– Robert J.D. Junior</h4>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <form action="#" method="POST" id="contact-form">
+      <label for="name">Name</label>
+      <input type="text" id="name" name="name" required>
+      
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" required>
+      
+      <label for="message">Message</label>
+      <textarea id="message" name="message" rows="5" required></textarea>
+      
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>© 2024 Pawan Kumar Rana | Designed by Pawan</p>
+  </footer>
+
+</body>
+</html>
